@@ -1,0 +1,15 @@
+@import "../../shared/styles/app.variables";
+@import "../../shared/styles/app.panels";
+:host {
+    // flex: 1;
+    margin-bottom: 20px;
+}
+
+.generic-panel {
+    padding: 10px;
+    height: 100%;
+    .content-container {
+        padding: 20px;
+    }
+    border: 1px solid rgba(200, 200, 200, 0.5);
+}

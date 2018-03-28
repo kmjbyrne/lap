@@ -1,0 +1,8 @@
+.breadcrumbles {
+    display: flex;
+    li:before {
+        margin-left: 30px;
+        padding-left: 30px;
+        content: "/";
+    }
+}

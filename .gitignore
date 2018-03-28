@@ -1,101 +1,53 @@
-# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
-*$py.class
+.sass-cache/
+.idea/
 
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-
-# Flask stuff:
+migrations/
 instance/
-.webassets-cache
+node_modules/
+cover/
 
-# Scrapy stuff:
-.scrapy
+# Logs
+logs
+*.log
 
-# Sphinx documentation
-docs/_build/
+# Coverage directory used by tools like istanbul
+coverage/
 
-# PyBuilder
-target/
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Users Environment Variables
+.lock-wscript
 
-# pyenv
-.python-version
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
 
-# celery beat schedule file
-celerybeat-schedule
+# Node Files #
+/node_modules
+/bower_components
 
-# SageMath parsed files
-*.sage.py
+# Coverage #
+/coverage/
 
-# dotenv
-.env
+# Typing #
+/src/typings/tsd/
+/typings/
+/tsd_typings/
 
-# virtualenv
-.venv
-venv/
-ENV/
+# Dist #
+/dist
+/public/__build__/
+/src/*/__build__/
+__build__/**
+.webpack.json
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# Doc #
+/doc/
 
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
+# IDE #
+.idea/
+*.swp

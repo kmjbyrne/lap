@@ -1,0 +1,22 @@
+<div class="signin-content">
+    <div class="panel text-center">
+        <div>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+                <p>Please login to continue</p>
+                <div class="full-width-input">
+                    <input mdInput placeholder="User" formControlName="userName" required>
+                    <!--md-error *ngIf="isFieldInvalid('userName')">
+              Please inform your user name
+            </md-error -->
+                </div>
+                <div class="full-width-input">
+                    <input mdInput type="password" placeholder="Password" formControlName="password" required>
+                    <!--md-error *ngIf="isFieldInvalid('userName')">
+              Please inform your password
+            </md-error -->
+                </div>
+                <button md-raised-button color="primary" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

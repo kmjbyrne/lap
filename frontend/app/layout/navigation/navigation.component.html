@@ -1,0 +1,27 @@
+<header>
+    <nav class="nav nav__wrapper">
+        <div class="nav__logo">
+            <h1><span>PAL</span></h1>
+        </div>
+        <ul class="nav__items">
+            <li class="nav__block nav__item" routerLinkActive="active cyan" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav__link" [routerLink]="['/']">Home</a>
+            </li>
+            <li class="nav__block nav__item" routerLinkActive="active g">
+                <a routerLink='/tasks'>Tasks</a>
+            </li>
+            <li class="nav__block nav__item" routerLinkActive="active o">
+                <a [routerLink]="['/groups']">Groups</a>
+            </li>
+            <li class="nav__block nav__item">
+                <a [routerLink]="['/user']">User</a>
+            </li>
+            <li class="nav__block nav__item">
+                <a [routerLink]="['/options']">Options</a>
+            </li>
+            <li class="nav__block nav__item">
+                <a [routerLink]="['/calendar']">Calendar</a>
+            </li>
+        </ul>
+    </nav>
+</header>

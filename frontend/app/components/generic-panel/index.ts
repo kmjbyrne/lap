@@ -1,0 +1,1 @@
+export { GenericPanelComponent } from "./generic-panel.component";

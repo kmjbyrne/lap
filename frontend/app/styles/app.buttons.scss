@@ -1,0 +1,44 @@
+@import "./app.mixins";
+@import "./app.variables";
+.base-button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    line-height: 3em;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    @include transition(100ms, ease-in);
+}
+
+.base-button:hover {
+    box-shadow: 1px 4px 10px 0px rgba(75, 75, 75, 0.192);
+}
+
+.plus-button {
+    background-color: #2e2e2e;
+    position: absolute;
+    right: 0;
+    padding: 20px 30px;
+    top: 0;
+    height: 100%;
+    @include transition(100ms, ease-in);
+}
+
+.plus-button:hover {
+    box-shadow: 0px 3px 10px #a5a5a5;
+    background-color: transparent;
+}
+
+.plus-button:after {
+    color: orange;
+    font-family: FontAwesome;
+    content: "\f067";
+    @include transition(100ms, ease-in);
+}
+
+.plus-button:hover:after {
+    color: green;
+}
