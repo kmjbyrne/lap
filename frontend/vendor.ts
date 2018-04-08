@@ -19,5 +19,3 @@ import 'angular2-moment';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 import 'coradel/dist/coradel.min.css'
-
-// import 'bootstrap/dist/css/bootstrap.css';

@@ -4,23 +4,52 @@
             <h1><span>PAL</span></h1>
         </div>
         <ul class="nav__items">
-            <li class="nav__block nav__item" routerLinkActive="active cyan" [routerLinkActiveOptions]="{ exact: true }">
-                <a class="nav__link" [routerLink]="['/']">Home</a>
+            <li class="nav__item" routerLinkActive="active cyan" [routerLinkActiveOptions]="{ exact: true }">
+                <div class="nav__block"><a class="nav__link" [routerLink]="['/']">Home</a></div>
             </li>
-            <li class="nav__block nav__item" routerLinkActive="active g">
-                <a routerLink='/tasks'>Tasks</a>
+            <li class="nav__item" routerLinkActive="active g">
+                <div class="c-dropdown">
+                    <div class="c-dropdown__toggle">
+                        <div class="nav__block"><a [routerLink]="['/tasks']">Tasks</a></div>
+                    </div>
+                    <div class="c-dropdown__subgroup c-dropdown--dark">
+                        <ul class="nav__items nav__items--column">
+                            <li class="nav__item-row">
+                                <a class="nav__link" [routerLink]="['/task/create']">
+                                    <div class="nav__block-lg">Create Task</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </li>
-            <li class="nav__block nav__item" routerLinkActive="active o">
-                <a [routerLink]="['/groups']">Groups</a>
+            <li class="nav__item" routerLinkActive="active g">
+                <div class="c-dropdown">
+                    <div class="c-dropdown__toggle">
+                        <div class="nav__block"><a [routerLink]="['/projects']">Projects</a></div>
+                    </div>
+                    <div class="c-dropdown__subgroup c-dropdown--dark">
+                        <ul class="nav__items nav__items--column">
+                            <li class="nav__item-row">
+                                <a class="nav__link" [routerLink]="['/project/create']">
+                                    <div class="nav__block-lg">Create Project</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </li>
-            <li class="nav__block nav__item">
-                <a [routerLink]="['/user']">User</a>
+            <li class="nav__item" routerLinkActive="active o">
+                <div class="nav__block"><a [routerLink]="['/contacts']">Contacts</a></div>
             </li>
-            <li class="nav__block nav__item">
-                <a [routerLink]="['/options']">Options</a>
+            <li class="nav__item">
+                <div class="nav__block"><a [routerLink]="['/user']">User</a></div>
             </li>
-            <li class="nav__block nav__item">
-                <a [routerLink]="['/calendar']">Calendar</a>
+            <li class="nav__item">
+                <div class="nav__block"><a [routerLink]="['/options']">Options</a></div>
+            </li>
+            <li class="nav__item">
+                <div class="nav__block"><a [routerLink]="['/calendar']">Calendar</a></div>
             </li>
         </ul>
     </nav>

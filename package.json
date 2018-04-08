@@ -1,6 +1,6 @@
 {
-  "name": "vivitask",
-  "version": "0.1.0",
+  "name": "simpal",
+  "version": "0.0.1",
   "license": "GPL",
   "scripts": {
     "clean": "rimraf node_modules doc dist && npm cache clean",
@@ -25,11 +25,14 @@
     "postinstall": "npm run webdriver-update"
   },
   "dependencies": {
+    "@angular/animations": "^5.2.9",
+    "@angular/cdk": "^5.2.4",
     "@angular/common": "~4.4.3",
     "@angular/compiler": "~4.4.3",
     "@angular/core": "~4.4.3",
     "@angular/forms": "~4.4.3",
     "@angular/http": "~4.4.3",
+    "@angular/material": "^5.2.4",
     "@angular/platform-browser": "~4.4.3",
     "@angular/platform-browser-dynamic": "~4.4.3",
     "@angular/router": "~4.4.3",
@@ -56,6 +59,7 @@
     "bootstrap": "^4.0.0",
     "codelyzer": "2.0.0",
     "copy-webpack-plugin": "^4.0.0",
+    "coradel": "0.0.2",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.10.0",

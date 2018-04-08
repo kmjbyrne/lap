@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-dashboard-layout',
-    template: '<application-navigation></application-navigation><router-outlet></router-outlet>',
-    styles: []
+    templateUrl: './dashboard-layout.component.html',
+    styleUrls: ['./dashboard-layout.component.scss']
 })
 export class DashboardLayoutComponent { }

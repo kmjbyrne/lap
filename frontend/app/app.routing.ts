@@ -3,8 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
 import { LoginComponent } from './login/login.component';
 import { LoginLayoutComponent } from './layout/login-layout.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { ContactsComponent } from './contacts/contacts.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { TasksComponent } from './components/tasks/tasks.component';
 
 const routes: Routes = [
 	{
@@ -14,19 +17,23 @@ const routes: Routes = [
 		children: [
 			{
 				path: '',
-				component: DashboardComponent
+				component: HomeComponent
+			},
+			{
+				path: 'tasks',
+				component: TasksComponent
 			},
 			{
 				path: 'contacts',
-				component: DashboardComponent
+				component: ContactsComponent
 			},
 			{
 				path: 'projects',
-				component: DashboardComponent
+				component: ProjectsComponent
 			},
 			{
 				path: 'invoices',
-				component: DashboardComponent
+				component: HomeComponent
 			}
 		]
 	},

@@ -1,0 +1,21 @@
+.main-container {
+    background-color: rgba(0, 0, 0, 0.06);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.application-container {
+    width: 1280px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin: auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #dedede;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}

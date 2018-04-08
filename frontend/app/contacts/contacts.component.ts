@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-home',
+    selector: 'app-contacts',
     template: `
-    <p>Yay! You are logged in!</p>
+    <p>Yay! Contacts </p>
   `,
     styles: []
 })
-export class DashboardComponent { }
+export class ContactsComponent { }

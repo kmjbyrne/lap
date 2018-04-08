@@ -1,6 +1,7 @@
 __pycache__/
 .sass-cache/
 .idea/
+__pycache__/
 
 migrations/
 instance/
