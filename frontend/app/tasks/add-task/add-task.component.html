@@ -1,0 +1,10 @@
+<div class="task-container">
+    <form class="text-left">
+        <div class="form-group">
+            <span>Max Label Size: {{ 50 - task.label.length }}</span>
+        </div>
+        <div class="form-group">
+            <input class="form-control" [(ngModel)]="task.label" name="label" placeholder="Task Label" maxlength="50" (keyup.enter)="addTask(task)" required/>
+        </div>
+    </form>
+</div>

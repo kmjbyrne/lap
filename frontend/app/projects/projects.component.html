@@ -1,1 +1,8 @@
-<p>YAY Projects</p>
+<a mat-raised-button class="text-left" [routerLink]="['/add-project']">Add New Plan</a>
+
+<div class="task-list">
+    <div class="task" *ngFor="let project of projects">
+        <div class="task__header"> {{ project.name }}</div>
+        <div class="task__body"> {{ project.description }} </div>
+    </div>
+</div>

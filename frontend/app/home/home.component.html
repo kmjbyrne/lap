@@ -1,0 +1,8 @@
+<h1>Project View</h1>
+
+<div class="task-list">
+    <div class="task" *ngFor="let project of projects">
+        <div class="task__header"> {{ project.label }}</div>
+        <div class="task__body"> {{ project.description }} </div>
+    </div>
+</div>

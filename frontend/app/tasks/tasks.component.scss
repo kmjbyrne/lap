@@ -1,0 +1,46 @@
+@import "frontend/styles/app.variables";
+@import "frontend/styles/app.buttons";
+@import "frontend/styles/app.tooltips";
+.task,
+.task-list-helper {
+    border: 1px solid #ccc;
+    margin: 20px 0px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    &__badge-container {
+        position: relative;
+    }
+    &__badge {
+        width: 50px;
+        transform: rotateZ(45deg);
+        margin-left: -25px;
+        height: 50px;
+        top: 0;
+    }
+    &__label,
+    &__metadata {
+        align-self: center;
+        flex: 1;
+        font-weight: 600;
+        &__item {
+            display: inline;
+        }
+    }
+    &__actions {
+        flex: 1;
+        text-align: end;
+    }
+}
+
+.task-buttons {
+    display: flex;
+}
+
+.wide {
+    flex: 1;
+}
+
+.completed {
+    text-decoration: line-through;
+}

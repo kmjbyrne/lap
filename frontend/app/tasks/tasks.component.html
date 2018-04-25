@@ -1,0 +1,45 @@
+<h5 class="text-left">Quick Add New Task</h5>
+
+<add-task></add-task>
+
+<div class="task-buttons">
+    <a class="wide" mat-raised-button matTooltip="Tooltip!" (click)="viewCurrentTasks()">View Current Tasks</a>
+    <a class="wide" mat-raised-button matTooltip="Tooltip!" (click)="viewCurrentTasks()">View All</a>
+</div>
+
+<div class="task-list">
+    <div class="task" [ngClass]="{'completed': task.status === false}" (click)="selectTask(task)" *ngFor="let task of tasks">
+        <div class="task__badge-container">
+            <div class="task__badge" [style.backgroundColor]="task.project.theme"></div>
+        </div>
+        <a class="task__label" [routerLink]="[ '/task', task.id ] "> {{ task.label }} </a>
+        <div class="task__metadata ">
+            <!-- <div class="task__metadata__item " *ngIf="hasAssignedProject(task) ">[{{ task.project.label }}]</div> -->
+            <div class="task__metadata__item ">
+                <div [ngClass]="{ 'priority-x': task.priority.id===0 , 'priority-h': task.priority.id===1 , 'priority-m': task.priority.id===2 , 'priority-l': task.priority.id===3 } ">
+                </div>
+            </div>
+        </div>
+        <div class="task__body "> {{ task.body }} </div>
+        <div class="task__actions ">
+            <a mat-icon-button class="c-button--view " matTooltip="Tooltip! " (click)="selectTask(task) "></a>
+            <a mat-icon-button class="c-button--check " matTooltip="Tooltip! " (click)="completeTask(task) "></a>
+            <a mat-icon-button class="c-button--edit " matTooltip="Tooltip! "></a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div class="task-modal " *ngIf="task ">
+    <div class="task-modal__container ">
+        <div class="task-modal__header ">
+            <h2>{{task.label}}</h2>
+        </div>
+        <div class="task-modal__body ">
+            <p>{{ task.description }}</p>
+        </div>
+        <div class="task-modal__actions ">
+            <a mat-raised-button (click)="closeViewTask() ">Close</a>
+        </div>
+    </div>
+</div>

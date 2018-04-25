@@ -1,0 +1,1 @@
+export { ViewTaskComponent } from './view-task.component';

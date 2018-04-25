@@ -1,10 +1,11 @@
+@import "../styles/app.variables";
 html {
     height: 100%;
 }
 
 body {
     background: rgb(247, 247, 247);
-    color: rgb(10, 10, 10);
+    color: $content-grey;
     font-family: "Monserrat", sans-serif; // background: -webkit-linear-gradient(#321961, #293f50) fixed; 
     // background: -moz-linear-gradient(#648880, #293f50) fixed;
     // background: linear-gradient(#090c23, #1f2724, #403630) fixed;

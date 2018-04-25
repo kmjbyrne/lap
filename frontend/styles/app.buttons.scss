@@ -42,3 +42,78 @@
 .plus-button:hover:after {
     color: green;
 }
+
+.app-button {
+    border: 1px solid $blue;
+}
+
+//
+// Application level button styles for all components
+//
+%action-button {
+    // padding: 30px;
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+}
+
+.c-button {
+    &--check:before {
+        @extend %action-button;
+        color: $green;
+        content: "\f00c";
+    }
+    &--edit:before {
+        @extend %action-button;
+        color: $content-grey;
+        content: "\f040";
+    }
+    &--view:before {
+        @extend %action-button;
+        color: $blue;
+        content: "\f129";
+    }
+    &--view:hover:before,
+    &--edit:hover:before,
+    &--check:hover:before {
+        color: grey;
+    }
+}
+
+.priority-x:before {
+    @extend %action-button;
+    content: "\f102";
+    color: $red;
+}
+
+.priority-h:before {
+    @extend %action-button;
+    content: "\f106";
+    color: $red;
+}
+
+.priority-m:before {
+    @extend %action-button;
+    content: "\f068";
+    color: $amber;
+}
+
+.priority-l:before {
+    @extend %action-button;
+    content: "\f107";
+    color: $green;
+}
+
+.green-button {
+    background-color: $green;
+    color: black;
+}
+
+.red-button {
+    background-color: $red;
+    color: black;
+}
+
+.amber-button {
+    background-color: $amber;
+    color: black;
+}
